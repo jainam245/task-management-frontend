@@ -1,11 +1,13 @@
 {
   "name": "nestjs-course-frontend",
   "version": "0.1.0",
+  "homepage": "https://jainam245.github.io/task-management-frontend",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.0.0",
     "@material-ui/icons": "^4.0.0",
     "axios": "^0.18.0",
+    "gh-pages": "^3.2.3",
     "mobx": "^5.9.4",
     "mobx-react": "^5.4.4",
     "mobx-react-router": "^4.0.7",
@@ -17,10 +19,13 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.0.1",
     "rxjs": "^6.5.2",
+    "save-dev": "^0.0.1-security",
     "styled-components": "^4.2.0",
     "typescript": "^3.4.5"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "cross-env PORT=3001 react-app-rewired start",
     "build": "cross-env react-app-rewired build",
     "test": "cross-env react-app-rewired test --env=jsdom",
