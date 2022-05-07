@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export default class BaseHttpService {
-  BASE_URL = process.env.REACT_APP_BASE_URL || 'http://localhost:3000';
+  BASE_URL = process.env.REACT_APP_BASE_URL || 'https://jainam245.github.io/task-management-frontend';
   
   _accessToken = null;
 
